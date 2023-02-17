@@ -56,14 +56,14 @@ app.post("/api/uploadFile", (req: Request, res: Response) => {
           (err, data) => {
             if (err) {
               console.log(err);
-              return res.send({ error: "error occurred" });
+              return;
             } else if (data) {
               return console.log(data);
             }
           }
         );
       });
-      res.send({ success: "multiple files successfully uploaded" });
+      return res.send({ success: "multiple files successfully uploaded" });
     } else {
       const filePath = myfile.filepath;
       const fileName = uuidv4() + myfile.originalFilename;
@@ -79,7 +79,7 @@ app.post("/api/uploadFile", (req: Request, res: Response) => {
         (err, data) => {
           if (err) {
             console.log(err);
-            return res.send({ error: "error occurred" });
+            return;
           } else if (data) {
             console.log(data);
             return res.send({ success: "one file successfully uploaded" });
