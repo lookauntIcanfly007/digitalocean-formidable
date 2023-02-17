@@ -56,7 +56,7 @@ app.post("/api/uploadFile", (req: Request, res: Response) => {
           (err, data) => {
             if (err) {
               console.log(err);
-              res.send("error occurred");
+              res.send({ error: "error occurred" });
             } else if (data) {
               console.log(data);
             }
@@ -79,7 +79,7 @@ app.post("/api/uploadFile", (req: Request, res: Response) => {
         (err, data) => {
           if (err) {
             console.log(err);
-            res.send("error occurred");
+            res.send({ error: "error occurred" });
           } else if (data) {
             console.log(data);
             res.send({ success: "one file successfully uploaded" });
