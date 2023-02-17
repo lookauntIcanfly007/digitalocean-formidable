@@ -90,6 +90,6 @@ app.post("/api/uploadFile", (req: Request, res: Response) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("express is listening on port 3000");
+app.listen(3001, () => {
+  console.log("express is listening on port 3001");
 });
