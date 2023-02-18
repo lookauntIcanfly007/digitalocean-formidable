@@ -1,0 +1,25 @@
+{
+  "folders": [
+	{
+		"path": "../new style"
+	},
+	{
+		"path": "../food app idea"
+	},
+	{
+		"path": "."
+	},
+	{
+		"path": "../happy-upload"
+	},
+	{
+		"path": "../server-fdc"
+	},
+	{
+		"path": "../socket"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "server-fdc"
+  }
+}

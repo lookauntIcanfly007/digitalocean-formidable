@@ -82,10 +82,10 @@ app.post("/api/uploadFile", (req: Request, res: Response) => {
             return;
           } else if (data) {
             console.log(data);
-            return res.send({ success: "one file successfully uploaded" });
           }
         }
       );
+      return res.send({ success: "one file successfully uploaded" });
     }
   });
 });
